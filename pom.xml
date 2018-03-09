@@ -64,7 +64,7 @@
         <module>apm-collector</module>
         <module>apm-protocol</module>
         <module>apm-webapp</module>
-        <module>apm-backend-dist</module>
+        <module>apm-dist</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -251,14 +251,6 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <version>${docker.plugin.version}</version>
-                <configuration>
-                    <skipDocker>true</skipDocker>
-                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
